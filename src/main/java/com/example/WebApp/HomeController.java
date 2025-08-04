@@ -20,4 +20,9 @@ public class HomeController {
     public @ResponseBody String outroEndpoint() {
         return "Outro...";
     }
+
+    @RequestMapping("/volta-endpoint")
+    public @ResponseBody String voltaEndpoint() {
+        return "Volta...";
+    }
 }
