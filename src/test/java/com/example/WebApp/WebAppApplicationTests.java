@@ -40,11 +40,19 @@ class WebAppApplicationTests {
 	}
 
 	@Test
-	public void shouldReturnOutro() throws Exception {
+	public void shouldReturnVolta() throws Exception {
 		this.mockMvc.perform(get("/volta-endpoint"))
 				.andDo(print()).andExpect(status().isOk())
 				.andExpect(content()
 						.string(containsString("Volta...")));
+	}
+
+	@Test
+	public void shouldReturnCode() throws Exception {
+		this.mockMvc.perform(get("/code-endpoint"))
+				.andDo(print()).andExpect(status().isOk())
+				.andExpect(content()
+						.string(containsString("code...")));
 	}
 }
 

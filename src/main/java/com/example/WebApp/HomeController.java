@@ -25,4 +25,9 @@ public class HomeController {
     public @ResponseBody String voltaEndpoint() {
         return "Volta...";
     }
+
+    @RequestMapping("/code-endpoint")
+    public @ResponseBody String codeEndpoint() {
+        return "code...";
+    }
 }
