@@ -15,4 +15,9 @@ public class HomeController {
     public @ResponseBody String greetingDavid() {
         return "Hello, David!";
     }
+
+    @RequestMapping("/outro-endpoint")
+    public @ResponseBody String outroEndpoint() {
+        return "Outro...";
+    }
 }

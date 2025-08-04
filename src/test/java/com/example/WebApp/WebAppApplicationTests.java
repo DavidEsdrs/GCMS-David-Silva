@@ -30,6 +30,14 @@ class WebAppApplicationTests {
 				.andExpect(content()
 						.string(containsString("Hello, David!")));
 	}
+
+	@Test
+	public void shouldReturnOutro() throws Exception {
+		this.mockMvc.perform(get("/outro-endpoint"))
+				.andDo(print()).andExpect(status().isOk())
+				.andExpect(content()
+						.string(containsString("Outro...")));
+	}
 }
 
 
