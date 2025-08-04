@@ -20,4 +20,9 @@ public class HomeController {
     public @ResponseBody String outroEndpoint() {
         return "Outro...";
     }
+
+    @RequestMapping("/code-endpoint")
+    public @ResponseBody String codeEndpoint() {
+        return "code...";
+    }
 }
