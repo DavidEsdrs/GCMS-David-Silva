@@ -30,4 +30,9 @@ public class HomeController {
     public @ResponseBody String codeEndpoint() {
         return "code...";
     }
+
+    @RequestMapping("/atrapalha-hotfix")
+    public @ResponseBody String atrapalhaHotfixEndpoint() {
+        return "Atrapalha hotfix...";
+    }
 }
