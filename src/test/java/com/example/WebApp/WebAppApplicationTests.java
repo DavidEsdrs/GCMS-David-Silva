@@ -55,6 +55,22 @@ class WebAppApplicationTests {
 				.andExpect(content()
 						.string(containsString("code...")));
 	}
+
+	@Test
+	public void shouldReturnAtrapalhaHotfix() throws Exception {
+		this.mockMvc.perform(get("/atrapalha-hotfix"))
+				.andDo(print()).andExpect(status().isOk())
+				.andExpect(content()
+						.string(containsString("Atrapalha hotfix...")));
+	}
+
+	@Test
+	public void shouldReturnHotfix() throws Exception {
+		this.mockMvc.perform(get("/hotfix"))
+				.andDo(print()).andExpect(status().isOk())
+				.andExpect(content()
+						.string(containsString("Hotfix...")));
+	}
 }
 
 
