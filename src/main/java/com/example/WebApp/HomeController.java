@@ -38,6 +38,6 @@ public class HomeController {
 
     @RequestMapping("/hotfix")
     public @ResponseBody String hotfix() {
-        return "Hotfix..";
+        return "Hotfix...";
     }
 }
